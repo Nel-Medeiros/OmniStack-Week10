@@ -12,7 +12,8 @@ html, body, #root {
 }
 
 body {
-    background: #e5e6f0;
+    background: url(./img/avgrs-bkg4.png);
+    background-size: cover;    
     -webkit-font-smoothing: antialiased;
 }
 
