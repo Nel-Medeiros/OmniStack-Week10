@@ -49,3 +49,16 @@ li.dev-item a {
 li.dev-item a:hover {
     color: #5a2ea6;
 }
+
+div.options {    
+    
+}
+
+div.options ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.options li {
+    
+}
