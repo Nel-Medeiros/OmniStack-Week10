@@ -5,12 +5,14 @@ const http = require ('http');
 const routes = require('./routes');
 const { setupWebsocket } = require('./websocket')
 
+require('dotenv').config();
+
 const app = express();
 const server = http.Server(app);
 
 setupWebsocket(server);
 
-mongoose.connect('mongodb+srv://nel-medeiros:NEL21VAL@cluster0-28v7e.mongodb.net/week10?retryWrites=true&w=majority', {
+mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASS}@cluster0-28v7e.mongodb.net/week10?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
